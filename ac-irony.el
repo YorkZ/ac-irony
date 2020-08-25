@@ -5,7 +5,7 @@
 ;; Author: Guillaume Papin <guillaume.papin@epitech.eu>
 ;; Version: 0.1.0
 ;; URL: https://github.com/Sarcasm/ac-irony/
-;; Package-Requires: ((auto-complete "1.4") (irony-mode "0.1"))
+;; Package-Requires: ((auto-complete "1.4") (irony "0.1"))
 ;; Keywords: c, convenience
 
 ;; This program is free software; you can redistribute it and/or modify
