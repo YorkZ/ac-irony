@@ -49,13 +49,26 @@
 ;; AC Irony
 ;;
 
+(defface ac-irony-candidate-face
+  '((t (:background "lightgray" :foreground "navy")))
+  "Face for clang candidate"
+  :group 'auto-complete)
+
+(defface ac-irony-selection-face
+  '((t (:background "navy" :foreground "white")))
+  "Face for the clang selected candidate."
+  :group 'auto-complete)
+
 ;;;###autoload
 (defvar ac-source-irony
-  '((cache)
+  '((candidate-face . ac-irony-candidate-face)
+    (selection-face . ac-irony-selection-face)
+    (cache)
     (requires   . -1)
     (limit      . nil)
     (prefix     . ac-irony-prefix)
-    (candidates . ac-irony-candidates)))
+    (candidates . ac-irony-candidates)
+    (symbol . "I")))
 
 ;;;###autoload
 (defun ac-complete-irony ()
